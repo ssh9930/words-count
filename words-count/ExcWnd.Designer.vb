@@ -44,13 +44,14 @@ Partial Class ExcWnd
         '
         'removebtn
         '
+        Me.removebtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.removebtn.Font = New System.Drawing.Font("굴림", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.removebtn.Location = New System.Drawing.Point(13, 212)
         Me.removebtn.Name = "removebtn"
         Me.removebtn.Size = New System.Drawing.Size(262, 23)
         Me.removebtn.TabIndex = 1
         Me.removebtn.Text = "Remove Selected"
-        Me.removebtn.UseVisualStyleBackColor = True
+        Me.removebtn.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
@@ -68,40 +69,44 @@ Partial Class ExcWnd
         '
         'addspacebtn
         '
+        Me.addspacebtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.addspacebtn.Location = New System.Drawing.Point(175, 72)
         Me.addspacebtn.Name = "addspacebtn"
         Me.addspacebtn.Size = New System.Drawing.Size(81, 23)
         Me.addspacebtn.TabIndex = 6
         Me.addspacebtn.Text = "Add Space"
-        Me.addspacebtn.UseVisualStyleBackColor = True
+        Me.addspacebtn.UseVisualStyleBackColor = False
         '
         'addtabbtn
         '
+        Me.addtabbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.addtabbtn.Location = New System.Drawing.Point(90, 72)
         Me.addtabbtn.Name = "addtabbtn"
         Me.addtabbtn.Size = New System.Drawing.Size(79, 23)
         Me.addtabbtn.TabIndex = 5
         Me.addtabbtn.Text = "Add Tab"
-        Me.addtabbtn.UseVisualStyleBackColor = True
+        Me.addtabbtn.UseVisualStyleBackColor = False
         '
         'addnbtn
         '
+        Me.addnbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.addnbtn.Location = New System.Drawing.Point(7, 72)
         Me.addnbtn.Name = "addnbtn"
         Me.addnbtn.Size = New System.Drawing.Size(77, 23)
         Me.addnbtn.TabIndex = 4
         Me.addnbtn.Text = "Add \n"
-        Me.addnbtn.UseVisualStyleBackColor = True
+        Me.addnbtn.UseVisualStyleBackColor = False
         '
         'addbtn
         '
+        Me.addbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.addbtn.Font = New System.Drawing.Font("굴림", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.addbtn.Location = New System.Drawing.Point(186, 30)
         Me.addbtn.Name = "addbtn"
         Me.addbtn.Size = New System.Drawing.Size(70, 23)
         Me.addbtn.TabIndex = 3
         Me.addbtn.Text = "Add"
-        Me.addbtn.UseVisualStyleBackColor = True
+        Me.addbtn.UseVisualStyleBackColor = False
         '
         'textbox1
         '
@@ -114,6 +119,7 @@ Partial Class ExcWnd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(291, 380)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.removebtn)

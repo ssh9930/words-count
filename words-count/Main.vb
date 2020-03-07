@@ -64,6 +64,7 @@
 
     Private Sub FontsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FontsToolStripMenuItem.Click
         Dim a As New FontDialog
+        a.ShowDialog()
         RichTextBox1.Font = a.Font
     End Sub
     Private Delegate Sub d()
@@ -99,8 +100,18 @@
     End Sub
 
 
-
+    Private clicked As Boolean = False
     Private Sub Button1_Click() Handles Button1.Click
+
+        If Not clicked Then
+            If MsgBox("This will erase your text and replace with the current file's text you loaded. sure to continue?", vbYesNo) = vbNo Then
+                Exit Sub
+            End If
+        End If
+        Try
+            RichTextBox1.Text = IO.File.ReadAllText(File)
+        Catch ex As Exception
+        End Try
         Label3.Text = RichTextBox1.Text.Count
         Dim a As String = RichTextBox1.Text
         For Each i In estr
@@ -111,5 +122,8 @@
         Next
 
         Label4.Text = a.Count
+        clicked = True
+
     End Sub
+
 End Class
